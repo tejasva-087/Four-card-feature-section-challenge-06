@@ -125,4 +125,7 @@ footer {
     gap: 2.4rem;
     flex-direction: column;
   }
+  .icon {
+    margin-left: 75%;
+  }
 }
