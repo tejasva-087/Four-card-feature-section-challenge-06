@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(229, 6%, 66%);
+}
+
+.main-container {
+  width: 32rem;
+  margin: 6rem auto 4rem;
+  text-align: center;
+}
+
+.main-heading {
+  font-size: 2.4rem;
+  font-weight: 200;
+  color: hsl(234, 12%, 34%);
+}
+
+.sub-heading,
+.box-heading {
+  font-weight: 600;
+  color: hsl(234, 12%, 34%);
+}
+
+.sub-heading {
+  font-size: 2.4rem;
+  margin-bottom: 2.4rem;
+}
+
+.text {
+  font-size: 1.6rem;
+  margin-bottom: 4.2rem;
+}
+
+.box-container {
+  display: grid;
+  grid-template-rows: repeat(1fr, 4);
+  text-align: start;
+  row-gap: 2.8rem;
+}
+
+.box {
+  padding: 2.4rem;
+  border-radius: 0.4rem;
+  box-shadow: 0 20px 20px 5px rgba(0, 0, 0, 0.09);
+}
+.center-box {
+  display: flex;
+  gap: 2.4rem;
+  flex-direction: column;
+}
+
+#box-cyan {
+  border-top: 0.4rem solid hsl(180, 62%, 55%);
+}
+
+#box-orange {
+  border-top: 0.4rem solid hsl(34, 97%, 64%);
+}
+
+#box-blue {
+  border-top: 0.4rem solid hsl(212, 86%, 64%);
+}
+
+#box-red {
+  border-top: 0.4rem solid hsl(0, 78%, 62%);
+}
+
+.box-heading {
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+}
+
+.text {
+  font-size: 1.4rem;
+}
+
+.icon {
+  margin-left: 70%;
+}
+
+footer {
+  margin-bottom: 2.4rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 90em) {
+  .main-container {
+    width: 110rem;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .text-container {
+    width: 48rem;
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+  .box-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2.4rem;
+    align-items: center;
+  }
+  .center-box {
+    display: flex;
+    gap: 2.4rem;
+    flex-direction: column;
+  }
+}
